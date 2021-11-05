@@ -1,0 +1,4 @@
+#Sobre mim
+Olá, me chamo Ana Flávia, tenho 22 anos, nasci em Caconde-SP mas atualmente moro em Ribeirão Preto-SP.
+Sou estudante de ciências sociais, mas percebi que não queria trabalhar nesse ramo, foi então que procurei a Labenu para me tornar uma pessoa desenvolvedora.
+Sempre gostei muito de tecnologia e já estou aprendendo bastante estando aqui na Labenu. Esse é meu projeto git-exercicio-1.
