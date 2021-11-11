@@ -58,11 +58,12 @@ const idadeHoras = 7200
 console.log (idadeHoras * 24)*/
 
 //4 - 
-let n1 = prompt("Digite um número aleatório")
-let n2 = prompt("Digite outro número aleatório")
+/*let n1 = prompt("Digite um número aleatório")
+let n2 = prompt("Digite outro número aleatório")*/
 
 /*const nMaior = n1 > n2
 console.log("O primeiro número é maior que o segundo?" + nMaior)*/
+
 /*const nIgual = n1 === n2
 console.log("O primeiro número é igual ao segundo?" + nIgual)*/
 
