@@ -68,7 +68,7 @@ console.log("O primeiro número é maior que o segundo?" + nMaior)*/
 console.log("O primeiro número é igual ao segundo?" + nIgual)*/
 
 /*const n1Divisivel = n1 % n2
-console.log("O primeiro número é divisível pelo segundo?" + (!n1Divisivel))*/
+console.log("O primeiro número é divisível pelo segundo?" + !n1Divisivel)*/
 
 /*const n2Divisivel = n2 % n1
 console.log("O segundo número é divisível pelo primeiro?" + (!n2Divisivel))*/
