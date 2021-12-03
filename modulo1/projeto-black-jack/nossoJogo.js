@@ -10,7 +10,7 @@
  * 
  * 
  */
-/*console.log("Boas vindas ao jogo de BlackJack!")
+ /*console.log("Boas vindas ao jogo de BlackJack!")
 if (confirm("Deseja iniciar uma nova rodada?")){
      const jogarBlack = ()=>{
       cartaUsuario1 = comprarCarta()
