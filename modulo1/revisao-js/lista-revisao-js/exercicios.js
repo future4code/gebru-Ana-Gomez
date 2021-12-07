@@ -15,14 +15,16 @@ return array.reverse()
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-    numbers.sort(function(a, b) {
-        return a - b;
-      });
+    function compareNumbers(a, b) {
+        return a - b
+    }
+    return array.sort(compareNumbers)
 }
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  
+
+  }
 }
 
 // EXERCÍCIO 05
