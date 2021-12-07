@@ -39,7 +39,9 @@ function retornaNumerosParesElevadosADois(array) {
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+const max = Math.max(...array)
+
+    return max
 }
 
 // EXERCÍCIO 07
