@@ -30,7 +30,11 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+    let evenNumbers = array.filter(even => (even % 2) === 0)
+    let square = evenNumbers.map(function(item){
+             return Math.pow(item, 2)
+    })
+    return square
 }
 
 // EXERCÍCIO 06
