@@ -23,9 +23,10 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
+    let evenNumbers = array.filter(even => (even % 2) === 0)
+    return evenNumbers
+ }
 
-  }
-}
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
