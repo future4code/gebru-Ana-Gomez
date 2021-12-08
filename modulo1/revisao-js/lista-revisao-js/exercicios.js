@@ -69,7 +69,13 @@ return objectNumbers
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
-
+    let arrayPairs = [] 
+    for (i = 0; arrayPairs.length < n; i++) {
+     if (i % 2 === 0) { 
+    arrayPairs.push(i)
+     } 
+    } 
+    return arrayPairs
 }
 
 // EXERCÍCIO 09
