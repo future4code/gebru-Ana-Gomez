@@ -47,11 +47,29 @@ const max = Math.max(...array)
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
 
+    let biggerNumber 
+    let smallerNumber 
+
+    if (num1 > num2){
+        biggerNumber = num1
+        smallerNumber = num2
+        } else{
+        biggerNumber = num2
+        smallerNumber = num1
+}
+let split = biggerNumber % smallerNumber === 0
+
+const objectNumbers = {
+    maiorNumero: biggerNumber,
+    maiorDivisivelPorMenor: split,
+    diferenca: (biggerNumber - smallerNumber)
+}
+return objectNumbers
 }
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
-   
+
 }
 
 // EXERCÍCIO 09
