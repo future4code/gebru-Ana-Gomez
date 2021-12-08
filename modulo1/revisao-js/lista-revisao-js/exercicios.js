@@ -120,25 +120,27 @@ pessoa.nome = "ANÔNIMO"
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-   
+   const permissionToEnter = pessoas.filter(pessoas => (pessoas.altura > 1.5 && pessoas.idade > 14 && pessoas.idade < 60))
+
+   return permissionToEnter
 }
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-  
+ 
 }
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
 
+ 
 }
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
-  
-}
 
+}
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
-   
+
 }
