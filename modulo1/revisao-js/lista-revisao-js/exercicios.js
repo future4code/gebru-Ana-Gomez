@@ -152,5 +152,12 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 }
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
+    consultas.sort((a,b) =>{
+    
+        return new Date(b.dataDaConsulta) - new Date(a.dataDaConsulta);
 
-}
+      })
+      return consultas
+} 
+// Era pra retornar por data, mas por algum motivo não ordena do jeito que eu quero. Já tentei tirar os "/".
+// Única coisa que não tentei foi ordenar primeiro por ano/mês/dia (igual o new Date gosta) e depois retornar o array ordenado por data.
