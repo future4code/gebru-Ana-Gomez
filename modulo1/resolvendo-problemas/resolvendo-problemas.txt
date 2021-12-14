@@ -1,0 +1,9 @@
+ Os 7 Passos Fundamentais Para A Resolução de Problemas
+
+ 1 - O primeiro passo é ler bem o enunciado para entender o problema que devemos resolver e o algorítmo que devemos criar.
+ 2 - O segundo passo é retirar as informações mais importantes do enunciado, aquelas que vamos usar para desenvolver nosso código.
+ 3 - O terceiro passo é começar a pensar nos inputs e outputs que podemos usar no nosso código.
+ 4 - O quarto passo é fazer um esquema visual (seja escrevendo com caneta e papel, fazendo fluxogramas e etc.) do que o enunciado pede.
+ 5 - O quinto passo é começar a criar o código, sem se importar muito em como ele vai ficar, focando apenas na eficiência dele.
+ 6 - O sexto passo é testar esse código que criamos.
+ 7 - O sétimo e último passo é refatorar o código (caso o mesmo funcione), focando no empenho e legibilidade dele.

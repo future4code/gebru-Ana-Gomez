@@ -10,7 +10,7 @@
  * 
  * 
  */
-console.log("Boas vindas ao jogo de BlackJack!")
+/*console.log("Boas vindas ao jogo de BlackJack!")
 if (confirm("Deseja iniciar uma nova rodada?")){
      const jogarBlack = ()=>{
       cartaUsuario1 = comprarCarta()
@@ -23,18 +23,23 @@ if (confirm("Deseja iniciar uma nova rodada?")){
 
 jogarBlack()
    
-console.log(`Usuário - cartas ${cartaUsuario1.texto} ${cartaUsuario2.texto}- pontuação: ${pontosUser} `)
+console.log(`Usuário - cartas ${cartaUsuario1.texto} ${cartaUsuario2.texto} - pontuação: ${pontosUser} `)
 console.log(`Computador - cartas ${cartaPc1.texto} ${cartaPc2.texto} - pontuação: ${pontosPc}`)
+alert(`Usuário - cartas ${cartaUsuario1.texto} ${cartaUsuario2.texto} - pontuação: ${pontosUser} `)
+alert(`Computador - cartas ${cartaPc1.texto} ${cartaPc2.texto} - pontuação: ${pontosPc}`)
    } else {
       console.log("Você perdeu! :c")
    }
-   if (pontosUser === pontosPc){
-      console.log("Deu Empate!")
-   } else if (pontosUser > pontosPc){
-     console.log("O Usuário ganhou!")
-   } else {
-      console.log("O Computador ganhou!")
-   }
+   if (pontosUser > pontosPc && pontosUser <= 21 ){
+      console.log("O Usuário ganhou!")
+      alert("O Usuário ganhou!")
+   } else if (pontosPc > pontosUser && pontosPc <= 21){
+     console.log("O Computador ganhou!")
+     alert("O Computador ganhou!")
+   } else if (pontosUser === pontosPc){
+      console.log("Deu empate!")
+      alert("Deu empate!")
+   }*/
 /*const cartaUsuario2 = comprarCarta()
 console.log(carta.texto)
 const cartaPc1 = comprarCarta()
