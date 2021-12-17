@@ -1,0 +1,101 @@
+/* Cor do Site inteiro */
+html, body{
+    background-color: rgb(248, 230, 230);
+    height: 100%;
+}
+/* Cabeçalho e Nome da Loja */
+.titulo-loja {
+    font-family:serif;
+    font-weight: bold;
+    text-align: center;
+    border-style: double;
+    border-width: medium;
+    background-color: lavenderblush;
+}
+
+/* Botôes do Site */
+button{
+    background-color: salmon;
+    color: sandybrown;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 150px;
+    text-shadow: 0.1em 0.1em 0.9em rgb(243, 165, 202)
+}
+/* Todos os p */
+p{
+    font-family:sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Primeira Frase */
+#frase-efeito{
+    background-color: lavenderblush;
+    display: block;
+    border-style:double;
+    border-width: thin;
+}
+/*  Frase - Siga nossas redes sociais */
+#redes-sociais{
+    text-align:left;
+    font-size: 15px;
+    
+}
+/* Rodapé - Redes Sociais */
+.rodape{
+    position: absolute;
+    bottom: 0;
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+/* Frase "Loja virtual criada..." */
+#frase-loja{
+    color: purple;
+    border-style:double;
+    border-width: thin;
+    background-color: lavenderblush;
+    
+}
+/* Todos os h2 do HTML */
+h2{
+    color:purple;
+    font-weight: bold;
+}
+/* Tabelas do Estoque */
+.titulo-tabela{
+    font-size:18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: salmon;
+}
+
+/* Imagens dos Produtos */
+.imagens{
+    max-width: 200px; 
+    max-height: 200px;
+    height: auto;
+    width: auto;
+}
+/* Fonte dos Produtos */
+td{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    color: purple;
+    background-color: rgb(247, 153, 142);
+}
+/* Botão Submit Add Produto */
+/* Por algum motivo não consigo mudar a cor desse botão */
+
+#frase-funcionario{
+    color: purple;
+    border-style:double;
+    border-width: thin;
+    background-color: lavenderblush;
+    
+}
