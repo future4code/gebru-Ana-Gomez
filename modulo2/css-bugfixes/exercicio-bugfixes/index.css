@@ -108,6 +108,10 @@ td button {
     height: 30px;
     border-radius: 5px;
     color: black;
+    border-style: solid;
+    border-bottom-width: 5px;
+    border-top-width: 0;
+    border-right-width: 0;
 }
 td button:hover{
     background-color: #8b8634;
