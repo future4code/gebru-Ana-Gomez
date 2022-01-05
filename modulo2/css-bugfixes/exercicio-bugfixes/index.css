@@ -113,8 +113,13 @@ td button {
 .container-do-search {
     margin-top: 20px;
     height: 100px;
-}
 
+}
+.icone {
+   height: 20px;
+   position: relative;
+   top: 5px;
+}
 
 #back-button {
     background-color: white;
