@@ -1,0 +1,81 @@
+              
+* {
+    margin: 0%;
+    padding: 0%;
+}        
+
+                          /* Estilização da Página Toda */
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    align-items: center;
+}
+
+
+                           /* Estilização do Cabeçalho */
+
+
+header{
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 40px 10fr 40px;
+    align-items: center;
+    background-color: mediumvioletred;
+}
+#buttom{
+    justify-self: end;
+}
+
+#p-estilizado{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    justify-self:flex-start;
+}
+
+#imagem-bolo{
+   justify-self: start;
+   width: 20px;
+}
+
+                      /* Estilização da Barra Lateral Esquerda */
+nav{
+display: flex;
+flex-direction: column;
+
+}
+
+nav img{
+width: 16px;
+}
+
+
+
+
+                     /* Estilização do Conteúdo Principal */
+ nav{
+     display: flex;
+     flex-direction: column;
+ }
+ nav img{
+     width: 16px;
+ }
+
+.bolo{
+    display: flex;
+    flex-direction: row;
+    justify-items: 20px;
+}
+
+
+                                 /* Estilização do Footer */
+footer{
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: mediumvioletred;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
