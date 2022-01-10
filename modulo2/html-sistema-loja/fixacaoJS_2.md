@@ -9,4 +9,3 @@ function calculaPrecoTotal(quantidade) {
     return menosMaca * quantidade
   }
 }
-```

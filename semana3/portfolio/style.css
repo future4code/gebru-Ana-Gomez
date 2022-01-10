@@ -1,0 +1,294 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+:target {
+  scroll-margin-top: .8em;
+}
+
+                             /* Estilização Geral da Página*/
+
+.estilo-geral{
+    background-color: #f6f5f5;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+
+                            /* Estilização do Menu Navegador*/
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+section:nth-of-type(1){
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/background-portfolio.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:relative;
+    background-attachment:local;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color:white;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 5%;
+}
+
+nav ul{
+    display: flex;
+    align-content: center;
+}
+
+nav ul li a{
+    margin: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+                                /* Logo da Página*/
+.logo{
+    display: flex;
+    align-items: flex-start;
+    width: 100px;
+}
+                            /* Destacando As Opções de Menu*/
+.active{
+    font-weight: bold;
+    color:rgb(139, 134, 55);
+}
+
+.active:hover{
+    border-bottom: 1px solid;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.active:target{
+    background-color: burlywood;
+}
+                            /* Estilização dos Textos da Página*/
+.conteudo-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+    left: 13%;
+    top: 42%;
+    transform: translate(-13%, -42%);
+}
+
+.conteudo-texto p:nth-child(1){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 30px;
+    margin-top: 200px;
+    width: calc(50% - 10px)
+}
+.conteudo-texto p:nth-child(2){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #000;
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+.conteudo-texto p:nth-child(3){
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #403e3e;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 30px; 
+}
+
+                                  /* Estilização dos Botões*/
+button{
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+}
+
+#button1{
+    border: 2px solid #373636;
+    color: #373636;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: 1.2s;
+}
+
+#button2{
+    background-color: #0b0b0b;
+    border: none;
+    color:#ffffff;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(189, 181, 69);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+                              /* Estilização da Imagem de Fundo*/
+.background-image{
+    height: 490px;
+    position:absolute;
+    bottom: 40px;
+    left: 1150px;
+    transform: translateX(-70%);
+}                              
+
+
+                            /* Estilização Página Sobre*/
+section:nth-of-type(2){
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/background-portfolio.png);
+    background-repeat:repeat;
+    background-size:cover;
+    position:absolute;
+}
+
+.texto-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+    left: 58%;
+    top: 50%;
+    transform: translate(-15%, -42%);
+}
+
+.texto-sobre p:nth-child(2){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #6d6d6d;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.texto-sobre p:nth-child(3){
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #403e3e;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 30px;
+    box-shadow: 5px -5px rgb(228, 231, 50);
+}
+
+.texto-sobre p:nth-child(4){
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #403e3e;
+    font-size: 25px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.texto-sobre p:nth-child(5){
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #403e3e;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.texto-sobre p:nth-child(6){
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #403e3e;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 20px;
+    box-shadow: 5px 5px rgb(228, 231, 50);
+}
+
+.img-sobre{
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+
+                              /* Estilização Página Sobre+++*/
+
+section:nth-of-type(3){
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/background-portfolio.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:relative;
+    background-attachment:local;
+}
+
+.formacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-10%, -42%);
+}
+
+.formacao p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #403e3e;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 80px;
+    margin-bottom: 14px;
+    border-top: 3px solid rgb(228, 231, 50);
+    border-radius: 10px;
+
+}
+
+.lista-formação{
+    list-style-type: disc;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #403e3e;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.lista-formação li:nth-child(3){
+    border-bottom: 3px solid rgb(228, 231, 50);
+    border-radius: 20px;
+}
+
+.gif{
+    margin-left: 10%;
+    margin-top: -12%;
+}
+
+.lista-habilidade {
+    list-style-type: disc;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #403e3e;
+    margin-top: 10px;
+    margin-left: 10px;
+}
