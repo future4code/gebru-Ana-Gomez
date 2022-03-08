@@ -1,24 +1,39 @@
 import React from 'react';
-import Cadastro from './pages/cadastro';
-import Lista from './pages/lista';
-import {Routes, Route, Link} from 'react-router-dom';
+import SignUp from './components/SignUp';
+import UserList from './components/UserList';
 
 
- const App = () => {
+class App extends React.Component {
+  state = {
+    renderedScreen: 'signUp'
+  }
+
+  chooseScreen = () =>{
+    switch(this.state.renderedScreen){
+      case 'signUp':
+        return <SignUp goToUserList={this.goToUserList}/>
+      case 'usersList':
+        return <UserList goToSignUp={this.goToSignUp}/>
+      default:
+        return <h2>Página Não Encontrada</h2>
+    }
+
+    goToSignUp = () =>{
+      this.setState({renderedScreen: 'signUp'})
+    }
+
+    goToUserList = () =>{
+      this.setState({renderedScreen: 'usersList'})
+    }
+  }
+  render(){
+
   return (
-    <>
-     <Routes>
-      <Route path='./' element={<Cadastro/>} />
-      <Route path='/lista' element={<Lista/>} />
-     </Routes>
-     <header>
-       <nav>
-       <Link to='/'>Cadastro</Link>
-       </nav>
-     </header>
-    
-    </>
+    <div>
+      {this.chooseScreen}
+    </div>
   )
+}
 }
 
 
