@@ -9,8 +9,11 @@ const SignUpCard = styled.div`
  margin-top: 80px;
 `
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 8498f6b7918500eca99cadf7043d572868355393
 class SignUp extends React.Component {
 state = {
     nameInput: '',
