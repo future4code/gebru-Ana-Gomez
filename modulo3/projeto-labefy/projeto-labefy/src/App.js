@@ -6,25 +6,18 @@ import DetailsPlaylist from './components/DetailsPlaylist';
 
 
 const GeneralDiv = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-position:absolute;
-top:0;
-left:0;
-bottom: 0;
-z-index:11;
-background-color:#e28743;
-width:100%;
-height:100%;
-opacity: .70;
+ display: grid;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ position:absolute;
+ top:0;
+ left:0;
+ z-index:11;
+ background-color:#e28743;
+ width: 100%;
+ opacity: .70;
 filter: alpha(opacity=65);
-scroll-behavior: smooth;
-
-&&:target{
-  scroll-margin-top: .8em;
-}
 `
 
 const FontStyled = styled.h1`

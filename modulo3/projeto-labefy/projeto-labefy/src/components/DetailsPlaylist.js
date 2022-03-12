@@ -78,7 +78,7 @@ deletePlaylist = (playlistId) =>{
         alert('Playlist apagada com sucesso!')
         this.getAllPlaylists()
     })
-    .catch(err => console.log(err))
+    .catch(err => console.log(err.response))
 }
     render (){
       const renderedPlaylist = this.state.userPlaylists.map((playlist) =>{
