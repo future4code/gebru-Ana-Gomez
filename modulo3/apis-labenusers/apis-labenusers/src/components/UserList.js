@@ -1,5 +1,8 @@
+<<<<<<< HEAD
+=======
 import React from 'react';
 import axios from 'axios';
+>>>>>>> 8498f6b7918500eca99cadf7043d572868355393
 import axios from 'axios';
 import React from 'react';
 import styled from 'styled-components';
