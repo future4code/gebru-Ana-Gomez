@@ -17,12 +17,10 @@ const BrandName = styled.p`
  display: flex;
  color: salmon;
  justify-content: center;
- margin-top: 20px;
+ padding-top: 15px;
  font-weight: bold;
  font-size: 20px;
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- border-bottom: 1px solid #f9f9f9;
-
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
 `
 
 function Header (){
