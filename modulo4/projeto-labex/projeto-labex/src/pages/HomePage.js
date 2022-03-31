@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-
+import { useNavigate } from "react-router-dom";
 
 const GeneralStyled = styled.div`
   background-image: url(https://olhardigital.com.br/wp-content/uploads/2020/12/espaco-sideral-viktorovpro-shutterstock.jpg);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -57,6 +56,10 @@ const Button1 = styled.button`
   border-radius: 50px;
   color: white;
   border: none;
+  cursor: pointer;
+  :hover{
+    background-color: #1f75fe;
+  }
 `;
 const Button2 = styled.button`
   margin-left: 30px;
@@ -67,9 +70,23 @@ const Button2 = styled.button`
   border-radius: 50px;
   color: #000000;
   border: none;
+  cursor: pointer;
+  :hover{
+   background-color: #d3d3d3;
+  }
 `;
 
 function HomePage() {
+
+  const navigate = useNavigate()
+
+  const goToListTripPage = () =>{
+    navigate("/trips/list")
+  }
+
+  const goToLoginPage = () =>{
+    navigate("/login")
+  }
   return (
     <GeneralStyled>
       <StyledParagraph>
@@ -79,10 +96,10 @@ function HomePage() {
         Confira as viagens disponíveis
         <br />
         <br />
-        <Button1>
+        <Button1 onClick={goToListTripPage}>
          Lista de Viagens
         </Button1>
-        <Button2>Login</Button2>
+        <Button2 onClick={goToLoginPage}>Login</Button2>
       </StyledParagraph>
     </GeneralStyled>
   );
