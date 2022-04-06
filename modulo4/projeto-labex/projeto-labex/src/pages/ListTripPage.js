@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const GeneralDiv = styled.div`
   background-image: url(https://olhardigital.com.br/wp-content/uploads/2020/12/espaco-sideral-viktorovpro-shutterstock.jpg);
@@ -18,6 +19,8 @@ const Button = styled.button`
   background-color: white;
   color: blue;
   cursor: pointer;
+  font-weight: bolder;
+  margin-right: 30px;
 `;
 
 const StyledH2 = styled.h2`
@@ -30,6 +33,7 @@ const StyledH2 = styled.h2`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: black 0.1em 0.1em 0.2em;
 `;
 
 function ListTripPage() {
@@ -38,9 +42,42 @@ function ListTripPage() {
   const goToHomePage = () => {
     navigate("/");
   };
+
+  const [trips, setTrips] = useState("");
+
+
+
+  const getTrips = () => {
+    const URL =
+      "https://us-central1-labenu-apis.cloudfunctions.net/labeX/ana-gomez-gebru/trips";
+    axios
+      .get(URL)
+      .then((res) => {
+        setTrips(res.data.trips);
+      })
+      .catch((err) => {
+        console.log(err.response);
+      });
+  };
+
+  useEffect(() => {
+    getTrips();
+  }, []);
+
+  const listTrips = trips.map((trip) => {
+      return (
+      <div>
+        <h3>{trip.name}</h3>
+        <p>{trip.description}</p>
+      </div>
+      );
+    });
+
   return (
     <GeneralDiv>
       <StyledH2>Lista de Viagens Disponíveis</StyledH2>
+      <div>{listTrips}</div>
+
       <Button onClick={goToHomePage}>Voltar</Button>
       <button>Inscreva-se</button>
       <br />
