@@ -12,15 +12,16 @@ const GeneralDiv = styled.div`
 `;
 const Button = styled.button`
   padding: 5px;
-  font-size: 15px;
-  font-family: "PT Sans", sans-serif;
-  border: none;
+  font-size: 20px;
   border-radius: 10px;
-  background-color: white;
-  color: blue;
   cursor: pointer;
   font-weight: bolder;
-  margin-right: 30px;
+  margin-right: 60px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  &&:hover{
+    box-shadow: 2px 2px #b7d7e8;
+  }
 `;
 
 const StyledH2 = styled.h2`
@@ -36,6 +37,23 @@ const StyledH2 = styled.h2`
   text-shadow: black 0.1em 0.1em 0.2em;
 `;
 
+const ListTripContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4040a1;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-left: 250px;
+  flex-direction: column;
+  padding: 15px;
+  width: 60vw;
+  box-shadow: 10px 10px #36486b;
+  &&:hover {
+    text-shadow: 2px -2px 10px red;
+  }
+`;
+
 function ListTripPage() {
   const navigate = useNavigate();
 
@@ -43,9 +61,10 @@ function ListTripPage() {
     navigate("/");
   };
 
+  const goToApplicationFormPage = () => {
+    navigate("/trips/application");
+  };
   const [trips, setTrips] = useState("");
-
-
 
   const getTrips = () => {
     const URL =
@@ -54,6 +73,7 @@ function ListTripPage() {
       .get(URL)
       .then((res) => {
         setTrips(res.data.trips);
+        console.log(res.data);
       })
       .catch((err) => {
         console.log(err.response);
@@ -65,21 +85,23 @@ function ListTripPage() {
   }, []);
 
   const listTrips = trips.map((trip) => {
-      return (
-      <div>
-        <h3>{trip.name}</h3>
-        <p>{trip.description}</p>
-      </div>
-      );
-    });
+    return (
+      <ListTripContainer>
+        <h3 key={trip.id}>Viagem: {trip.name}</h3>
+        <p>Data: {trip.date}</p>
+        <p>Duração em dias: {trip.durationInDays}</p>
+        <p>Descrição: {trip.description}</p>
+      </ListTripContainer>
+    );
+  });
 
   return (
     <GeneralDiv>
       <StyledH2>Lista de Viagens Disponíveis</StyledH2>
-      <div>{listTrips}</div>
+      {listTrips}
 
       <Button onClick={goToHomePage}>Voltar</Button>
-      <button>Inscreva-se</button>
+      <Button onClick={goToApplicationFormPage}>Inscreva-se</Button>
       <br />
     </GeneralDiv>
   );

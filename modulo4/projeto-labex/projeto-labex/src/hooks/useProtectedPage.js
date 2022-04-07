@@ -1,16 +1,15 @@
 import { useEffect } from "react";
-import goToLogin from "../routes/coordinator";
+import { goToLogin } from "../routes/coordinator";
 import { useNavigate } from "react-router-dom";
 
-export const useProtectedPage = ()=>{
+export const useProtectedPage = () => {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
+  useEffect(() => {
+    const token = localStorage.getItem("token");
 
-    useEffect(() => {
-      const token = localStorage.getItem("token");
-  
-      if (token === null) {
-        goToLogin(navigate);
-      }
-    }, [navigate]);
-}
+    if (token === null) {
+      goToLogin(navigate);
+    }
+  }, [navigate]);
+};

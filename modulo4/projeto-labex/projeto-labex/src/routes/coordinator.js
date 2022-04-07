@@ -3,5 +3,5 @@ export const goToTripDetails = (navigate) =>{
 }
 
 export const goToLogin = (navigate) =>{
-    navigate("/login")
+    navigate("/login");
 }
