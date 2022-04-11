@@ -4,23 +4,26 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const GeneralDiv = styled.div`
-  background-image: url(https://olhardigital.com.br/wp-content/uploads/2020/12/espaco-sideral-viktorovpro-shutterstock.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2016/07/01/09/05/space-1490668_1280.png);
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 `;
+
 const Button = styled.button`
   padding: 5px;
   font-size: 20px;
   border-radius: 10px;
   cursor: pointer;
   font-weight: bolder;
-  margin-right: 60px;
+  margin-right: 40px;
   margin-top: 100px;
   margin-bottom: 70px;
   &&:hover{
     box-shadow: 2px 2px #b7d7e8;
+    background-color: #1f75fe;
+    color: black;
   }
 `;
 
@@ -48,11 +51,18 @@ const ListTripContainer = styled.div`
   flex-direction: column;
   padding: 15px;
   width: 60vw;
-  box-shadow: 10px 10px #36486b;
-  &&:hover {
-    text-shadow: 2px -2px 10px red;
+  box-shadow: 10px 10px #736CED;
+  &&:hover p{
+    color: #D5C7BC;
   }
 `;
+
+const StyledH3 = styled.h3`
+ color: #783F8E;
+ &&:hover{
+   color: #6F9CEB;
+ }
+`
 
 function ListTripPage() {
   const navigate = useNavigate();
@@ -64,7 +74,7 @@ function ListTripPage() {
   const goToApplicationFormPage = () => {
     navigate("/trips/application");
   };
-  const [trips, setTrips] = useState("");
+  const [trips, setTrips] = useState([]);
 
   const getTrips = () => {
     const URL =
@@ -84,10 +94,10 @@ function ListTripPage() {
     getTrips();
   }, []);
 
-  const listTrips = trips.map((trip) => {
+   const listTrips = trips.map((trip) => {
     return (
       <ListTripContainer>
-        <h3 key={trip.id}>Viagem: {trip.name}</h3>
+        <StyledH3 key={trip.id}>Viagem: {trip.name}</StyledH3>
         <p>Data: {trip.date}</p>
         <p>Duração em dias: {trip.durationInDays}</p>
         <p>Descrição: {trip.description}</p>
@@ -99,10 +109,8 @@ function ListTripPage() {
     <GeneralDiv>
       <StyledH2>Lista de Viagens Disponíveis</StyledH2>
       {listTrips}
-
       <Button onClick={goToHomePage}>Voltar</Button>
       <Button onClick={goToApplicationFormPage}>Inscreva-se</Button>
-      <br />
     </GeneralDiv>
   );
 }
