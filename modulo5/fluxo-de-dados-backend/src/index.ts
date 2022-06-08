@@ -81,7 +81,7 @@ app.delete("/delete/product", (req: Request, res: Response) => {
         return p;
       }
     });
-    products.slice(indexProduct, 1);
+    products.splice(indexProduct, 1);
 
     res.send(products);
   } catch (error) {
